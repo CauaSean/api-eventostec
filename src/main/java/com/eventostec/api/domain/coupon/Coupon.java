@@ -10,7 +10,7 @@ import lombok.Setter;
 import java.util.Date;
 import java.util.UUID;
 
-@Table(name = "cupom")
+@Table(name = "coupon")
 @Entity
 @Setter
 @Getter
@@ -26,6 +26,6 @@ public class Coupon {
     private Date valid;
 
     @ManyToOne
-    @JoinColumn(name = "event-id")
+    @JoinColumn(name = "event_id")
     private Event event;
 }
